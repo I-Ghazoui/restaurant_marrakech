@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #D4AF37;
+  --secondary-color: #1E293B;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  padding-top: 4rem;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+.nav-link {
+  @apply text-gray-700 hover:text-primary transition-colors duration-300 font-medium;
+}
+
+.hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  margin-top: -4rem;
+  padding-top: 4rem;
+}
+
+.service-card {
+  @apply bg-white rounded-xl shadow-lg p-6 text-center transform hover:-translate-y-2 transition-all duration-300;
+}
+
+.service-card .icon-wrapper {
+  @apply w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center text-primary text-2xl;
+}
+
+.service-card h3 {
+  @apply text-lg font-bold mb-2;
+}
+
+.service-card p {
+  @apply text-gray-600;
+}
+
+.favorite-dish-card {
+  @apply bg-white rounded-xl shadow-lg overflow-hidden;
+}
+
+.social-icon {
+  @apply text-2xl hover:text-primary transition-colors duration-300;
+}
+
+#mobile-menu {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+header {
+  @apply fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-md z-50;
+}
