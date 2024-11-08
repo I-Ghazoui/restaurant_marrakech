@@ -33,9 +33,9 @@ h1, h2, h3, h4 {
   @apply bg-white rounded-xl shadow-lg p-6 text-center transform hover:-translate-y-2 transition-all duration-300;
 }
 
-.service-card .icon-wrapper {
+/* .service-card .icon-wrapper {
   @apply w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center text-primary text-2xl;
-}
+} */
 
 .service-card h3 {
   @apply text-lg font-bold mb-2;
